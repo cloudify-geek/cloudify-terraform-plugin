@@ -26,7 +26,7 @@ setup(
     license='LICENSE',
     install_requires=[
         'cloudify-common>=4.5.5',
-        'pyyaml==3.10',
+        'pyyaml==5.1',
         'requests>=2.7.0,<3.0'
     ]
 )
