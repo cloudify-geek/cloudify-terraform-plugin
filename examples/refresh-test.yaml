@@ -79,8 +79,8 @@ node_templates:
       instance_type: { get_attribute: [ aws_two_tier_example, resources, aws_instance.web, primary, attributes, instance_type ] }
       ami: { get_attribute: [ aws_two_tier_example, resources, aws_instance.web, primary, attributes, ami ] }
       key_name: { get_attribute: [ aws_two_tier_example, resources, aws_instance.web, primary, attributes, key_name ] }
-      availability_zone: { get_attribute: [ aws_two_tier_example, resources, aws_subnet.default, primary, attributes, availability_zone ] }
-      instance_state: { get_attribute: [ aws_two_tier_example, resources, aws_subnet.default, primary, attributes, instance_state ] }
+      availability_zone: { get_attribute: [ aws_two_tier_example, resources, aws_instance.web, primary, attributes, availability_zone ] }
+      instance_state: { get_attribute: [ aws_two_tier_example, resources, aws_instance.web, primary, attributes, instance_state ] }
     relationships:
     - type: cloudify.relationships.contained_in
       target: aws_two_tier_example
