@@ -41,12 +41,6 @@ node_templates:
       storage_path: /tmp/template
       plugins_dir: /tmp/template
       resource_config:
-        backend:
-          name: s3
-          options:
-            bucket: terraform-integration
-            key: terraform.tfstate
-            region: { get_input: aws_default_region }
         environment_variables:
           AWS_ACCESS_KEY_ID: { get_input: aws_access_key_id }
           AWS_SECRET_ACCESS_KEY: { get_input: aws_secret_access_key }
