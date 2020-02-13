@@ -116,7 +116,7 @@ capabilities:
     value: { get_attribute: [ test_ec2_instance, instance_type ] }
   host_availability_zone:
     value: { get_attribute: [ test_ec2_instance, availability_zone ] }
-  instance_state:
+  host_instance_state:
     value: { get_attribute: [ test_ec2_instance, instance_state ] }
   subnet_cidr_block:
     value: { get_attribute: [ test_subnet, cidr_block ] }
