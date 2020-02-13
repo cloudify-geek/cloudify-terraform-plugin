@@ -25,12 +25,6 @@ inputs:
   public_key:
     default: { get_secret: agent_key_public }
 
-  backend_options:
-    default:
-      bucket: terraform-integration
-      key: terraform.tfstate
-      region: { get_input: aws_default_region }
-
 node_templates:
 
   # Build an infrastructure in AWS
